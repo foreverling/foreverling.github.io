@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    <title>CSS3简易转盘</title>
+    <link rel="stylesheet" type="text/css" href="../css/rotate/style.min.css"/>
+</head>
+<body>
+    <div id="back_top">
+        <h2>幸运大转盘</h2>
+    </div>
+    <div class="shadow"></div>
+    <div id="award_boxs">
+        <div id="award_inner">
+        </div>
+        <div id="pointer"></div>
+    </div>
+    <div id="integral">
+        我的积分:<span class="my">300</span>
+    </div>
+    <p id="award_instruction">
+        抽奖说明：每次抽奖消耗100积分
+    </p>
+    <audio id="audio1" src="../other/rotate.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audio2" src="../other/wedding.mp3" type="audio/mp3" autoplay="autoplay" loop="loop">
+    </audio>
+    <div id="music">
+        <div class="back"></div>
+    </div>
+    <div id="award_tip">
+        <div class="back"></div>
+        <h2>
+            安慰奖
+        </h2>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<!-- jquery旋转插件 -->
+<script type="text/javascript" src="../js/rotate/awardRotate.min.js"></script>
+<script type="text/javascript" src="../js/rotate/control.min.js"></script>
+</html>

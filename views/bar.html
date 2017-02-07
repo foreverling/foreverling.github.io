@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas柱形图</title>
+    <style>
+    html,
+    body,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #oDiv {
+        margin: 20px auto;
+        width: 600px;
+        height: 400px;
+    }
+    
+    #tip {
+        position: absolute;
+        border-radius: 5px;
+        background-color: rgba(50, 50, 50, 0.7);
+        color: #fff;
+        font-size: 14px;
+        font-family: "Microsoft YaHei";
+        line-height: 21px;
+        padding: 5px;
+        display: none;
+    }
+    
+    .circle {
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background: #c23531;
+        display: inline-block;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="oDiv">
+        <canvas id="canvas" width="600" height="400">请您更换支持canvas的浏览器</canvas>
+    </div>
+    <div id="tip">
+        <p>销量</p>
+        <p><span class="circle"></span>
+            <label id="content">雪纺衫：16</label>
+            <p>
+    </div>
+    <script type="text/javascript" src="../js/bar/main.min.js"></script>
+</body>
+</body>
+
+</html>

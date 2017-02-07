@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas折线图</title>
+    <style type="text/css">
+    body,p{margin:0;padding:0;}
+    #div1{width: 600px;height: 400px;margin:20px auto;position: relative;}
+    #div2{position: absolute;top:420px;left:0;}
+    #can1,#can2,#can3{position: absolute;top:0;left:0;}
+    #input1,#input2{width: 500px;height: 40px;font-size:20px;}
+    #btn{width:100px;line-height: 30px;font-size:20px;cursor: pointer;}
+    #div2 p{padding: 10px 0;}
+    #forBtn{text-align: center;}
+    #tip{ position: absolute; border-radius: 5px; background-color: rgba(50, 50, 50, 0.7); color: #fff; font-size: 14px; font-family: "Microsoft YaHei"; line-height: 21px;
+    padding: 5px; display: none;}
+    .circle{ width: 10px; height: 10px; margin-right: 5px; border-radius: 50%; background: #c23531; display: inline-block;}
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <canvas id="can1">您的浏览器不支持canvas，请您更换支持canvas的浏览器</canvas>
+        <canvas id="can2">您的浏览器不支持canvas，请您更换支持canvas的浏览器</canvas>
+        <canvas id="can3">您的浏览器不支持canvas，请您更换支持canvas的浏览器</canvas>
+        <div id="div2">
+            <p>最高气温：<input type="text" id="input1" /> </p>
+            <p>最低气温：<input type="text" id="input2" /> </p>
+            <p id="forBtn"><input type="button" id="btn" value="重置"></input></p>
+        </div>
+    </div>
+    <div id="tip">
+        <p id="date">周一</p>
+        <p><span class="circle"></span><label id="content1">最高气温：16</label><p>
+        <p><span class="circle" style="background: #2f4554;"></span><label id="content2">最低气温：16</label><p>
+    </div>
+    <script type="text/javascript" src="../js/line/main.min.js"></script>
+</body>
+</html>
